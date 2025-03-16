@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url('photo') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 50px 0;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #967969;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #FFD700, 0 0 20px #FFD700;
+}
+
+h1 {
+  font-family: "Brush Script MT", cursive;
+}
+
+.form-section,
+.result-section,
+.recommendations-section {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 50%;
+}
+
+form input {
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  width: 80%;
+}
