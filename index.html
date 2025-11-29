@@ -1,173 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LushFit - Find Your Perfect Fit</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noor — Fashion for Every Body</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
 
-    body {
-      margin: 0;
-      padding: 0;
-      background: url("photo3.jpg") no-repeat center fixed;
-      background-size: cover;
-      font-family: 'Poppins', sans-serif;
-      color: black;
-    }
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#">Noor✨</a>
+        <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mainNav" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <nav id="mainNav" class="main-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#sizes">All Sizes</a></li>
+            <li><a href="#story">Our Story</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <button class="icon-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+          <button class="icon-btn" aria-label="Wishlist"><i class="fas fa-heart"></i></button>
+          <button class="icon-btn" aria-label="Shopping Cart"><i class="fas fa-shopping-bag"></i></button>
+        </div>
+      </div>
+    </header>
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.7);
-      padding: 8px;
-    }
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Every Body is Beautiful</h1>
+          <p class="hero-subtitle">Noor — where style knows no size. Fashion designed to celebrate you, exactly as you are.</p>
+          <div class="hero-buttons">
+            <a href="#collections" class="btn btn-primary">Shop All Sizes</a>
+            <a href="#form" class="btn btn-secondary">Find Your Fit</a>
+          </div>
+        </div>
+      </section>
 
-    .logo {
-      font-size: 1.8rem;
-      font-weight: bold;
-      color: #967969;
-      font-family: "GaramondS", cursive;
-    }
+      <!-- Size Section -->
+      <section id="sizes" class="size-section">
+        <div class="container size-content">
+          <div class="size-text">
+            <h2>Your Size, Your Style</h2>
+            <p class="section-desc">We design for real women with real bodies. Every piece in our collection is thoughtfully crafted to flatter and fit beautifully across our full size range.</p>
+            <ul class="features-list">
+              <li><strong>Extended Size Range:</strong> XS to 6XL in most styles</li>
+              <li><strong>Fit Guide:</strong> Detailed measurements and fit notes for every item</li>
+              <li><strong>Real Reviews:</strong> See how items fit on different body types</li>
+            </ul>
+            <a href="#form" class="btn btn-primary">View Size Guide</a>
+          </div>
+          <div class="size-image">
+            <div class="size-badge">
+              <div class="size-text-large">XS - 6XL</div>
+              <div class="size-text-small">All sizes, same price</div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    .form-section,
-    .result-section,
-    .recommendations-section {
-      text-align: center;
-      padding: 15px;
-      background: rgba(255, 255, 255, 0.4); /* More translucent */
-      border-radius: 10px;
-      margin: 15px auto;
-      width: 30%;
-      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Lighter shadow */
-      backdrop-filter: blur(3px); /* Softer blur */
-    }
+      <!-- Values Section -->
+      <section class="values-section">
+        <div class="container">
+          <h2 class="section-title">Fashion for Every Body</h2>
+          <p class="section-subtitle">At Noor, we believe beauty comes in all shapes and sizes. Our mission is to make every woman feel confident, comfortable, and beautiful.</p>
+          <div class="grid grid-3">
+            <div class="value-card">
+              <div class="icon-circle"><i class="fas fa-heart"></i></div>
+              <h3>Body Positive</h3>
+              <p>We celebrate all body types, shapes, and sizes. Your confidence is our runway.</p>
+            </div>
+            <div class="value-card">
+              <div class="icon-circle"><i class="fas fa-star"></i></div>
+              <h3>Inclusive Sizing</h3>
+              <p>From XS to 6XL — truly stylish fashion that fits everyone beautifully.</p>
+            </div>
+            <div class="value-card">
+              <div class="icon-circle"><i class="fas fa-users"></i></div>
+              <h3>Real Women</h3>
+              <p>Our models represent real bodies, real beauty, and real diversity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- Collections Section -->
+      <section id="collections" class="collections-section">
+        <div class="container">
+          <h2 class="section-title">Shop Our Collections</h2>
+          <p class="section-subtitle">Curated styles available in all sizes</p>
+          <div class="grid grid-4">
+            <div class="collection-card">
+              <div class="collection-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=600&h=800&fit=crop') center/cover;"></div>
+              <h3>Everyday Essentials</h3>
+              <p>Comfortable styles for every day</p>
+            </div>
+            <div class="collection-card">
+              <div class="collection-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=600&h=800&fit=crop') center/cover;"></div>
+              <h3>Statement Pieces</h3>
+              <p>Bold looks that turn heads</p>
+            </div>
+            <div class="collection-card">
+              <div class="collection-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=800&fit=crop') center/cover;"></div>
+              <h3>Active & Athleisure</h3>
+              <p>Move freely in style</p>
+            </div>
+            <div class="collection-card">
+              <div class="collection-image" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=600&h=800&fit=crop') center/cover;"></div>
+              <h3>Evening Elegance</h3>
+              <p>Glamorous for special occasions</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    h2 {
-      font-weight: 600;
-      font-size: 1.2rem;
-    }
+      <!-- Find Your Fit Section -->
+      <section id="form" class="form-section">
+        <div class="container">
+          <h2 class="section-title">Find Your Perfect Fit</h2>
+          <p class="section-subtitle">Enter your measurements to discover your body type and get personalized style recommendations</p>
+          <div class="form-card">
+            <form id="sizeForm" class="size-form" autocomplete="off">
+              <div class="form-row">
+                <label for="shoulder">Shoulder (inches)</label>
+                <input type="number" id="shoulder" name="shoulder" min="0" step="0.1" placeholder="e.g., 15.5">
+              </div>
+              <div class="form-row">
+                <label for="bust">Bust (inches) *</label>
+                <input type="number" id="bust" name="bust" required min="0" step="0.1" placeholder="e.g., 36">
+              </div>
+              <div class="form-row">
+                <label for="waist">Waist (inches) *</label>
+                <input type="number" id="waist" name="waist" required min="0" step="0.1" placeholder="e.g., 28">
+              </div>
+              <div class="form-row">
+                <label for="hips">Hips (inches) *</label>
+                <input type="number" id="hips" name="hips" required min="0" step="0.1" placeholder="e.g., 38">
+              </div>
+              <div class="form-row">
+                <label for="highHip">High Hip (inches)</label>
+                <input type="number" id="highHip" name="highHip" min="0" step="0.1" placeholder="e.g., 34">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Get My Body Type</button>
+                <button type="button" id="resetBtn" class="btn btn-ghost">Reset</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
 
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+      <!-- Results Section -->
+      <section id="result" class="result-section" style="display:none;">
+        <div class="container">
+          <div class="result-card">
+            <h2>Your Body Type</h2>
+            <p id="bodyType" class="body-type-result"></p>
+          </div>
+        </div>
+      </section>
 
-    form label {
-      font-size: 0.8rem;
-      font-weight: 400;
-      margin-bottom: 3px;
-    }
+      <!-- Recommendations Section -->
+      <section id="recommendations" class="recommendations-section" style="display:none;">
+        <div class="container">
+          <div class="recommendations-card">
+            <h2>Style Recommendations</h2>
+            <div id="styleAdvice"></div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    form input {
-      width: 50%;
-      padding: 6px;
-      font-size: 0.8rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      text-align: center;
-      margin-bottom: 8px;
-      background: rgba(255, 255, 255, 0.7); /* Slightly translucent input */
-    }
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <div class="footer-col">
+          <h3 class="footer-logo">Noor✨</h3>
+          <p>Fashion that celebrates every body, every curve, every story.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#new-arrivals">New Arrivals</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li><a href="#gift-cards">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#size-guide">Size Guide</a></li>
+            <li><a href="#shipping">Shipping & Returns</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Connected</h4>
+          <p>Join our community and get 15% off your first order</p>
+          <div class="newsletter">
+            <input type="email" placeholder="Your email" aria-label="Email address">
+            <button class="btn btn-primary"><i class="fas fa-envelope"></i></button>
+          </div>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Noor. All bodies welcome. All rights reserved.</p>
+      </div>
+    </footer>
 
-    button {
-      background: #967969;
-      color: white;
-      font-size: 0.9rem;
-      font-weight: bold;
-      padding: 6px 12px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-
-    button:hover {
-      background: #7c5a48;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1 class="logo">LushFit</h1>
-  </header>
-
-  <section class="form-section">
-    <h2>Enter Your Measurements</h2>
-    <form id="sizeForm">
-      <label for="shoulder">Shoulder (inches):</label>
-      <input type="number" id="shoulder" name="shoulder" required>
-      
-      <label for="bust">Bust (inches):</label>
-      <input type="number" id="bust" name="bust" required>
-      
-      <label for="waist">Waist (inches):</label>
-      <input type="number" id="waist" name="waist" required>
-      
-      <label for="hips">Hips (inches):</label>
-      <input type="number" id="hips" name="hips" required>
-      
-      <label for="highHip">High Hip (inches):</label>
-      <input type="number" id="highHip" name="highHip" required>
-      
-      <button type="submit">Get My Body Type</button>
-    </form>
-  </section>
-
-  <section id="result" class="result-section">
-    <h2>Your Body Type</h2>
-    <p id="bodyType">Please fill in your measurements.</p>
-  </section>
-
-  <section id="recommendations" class="recommendations-section">
-    <h2>Style Recommendations</h2>
-    <p id="styleAdvice">Your personalized fashion suggestions will appear here.</p>
-  </section>
-
-  <script>
-    document.getElementById("sizeForm").addEventListener("submit", function(event) {
-  event.preventDefault();
-  
-  let bust = parseFloat(document.getElementById("bust").value);
-  let waist = parseFloat(document.getElementById("waist").value);
-  let hips = parseFloat(document.getElementById("hips").value);
-  let highHip = parseFloat(document.getElementById("highHip").value);
-  let bodyType = "";
-   
-  if ((Math.abs(bust - hips) <= 1 && Math.abs(hips - bust) < 3.6 && bust - waist >= 9) || (hips - waist >= 10)) {
-    bodyType = "Hourglass";
-  } else if ((hips - bust) >= 3.6 && (hips - bust) < 10 && (hips - waist) >= 9 && (highHip / waist) < 1.193) {
-    bodyType = "Bottom Hourglass";
-  } else if ((bust - hips) > 1 && (bust - hips) < 10 && (bust - waist) >= 9) {
-    bodyType = "Top Hourglass";
-  } else if ((hips - bust) > 2 && (hips - waist) >= 7 && (highHip / waist) >= 1.193) {
-    bodyType = "Spoon";
-  } else if ((hips - bust) >= 3.6 && (hips - waist) < 9) {
-    bodyType = "Triangle";
-  } else if ((bust - hips) >= 3.6 && (bust - waist) < 9) {
-    bodyType = "Inverted Triangle";
-  } else if ((hips - bust) < 3.6 && (bust - hips) < 3.6 && (bust - waist) < 9 && (hips - waist) < 10) {
-    bodyType = "Rectangle";
-  } else {
-    bodyType = "Unknown";
-  }
-
-  let resultText = document.getElementById("bodyType");
-  resultText.textContent = "Your body type is: " + bodyType;
-
-  // Only enhance text, keeping box size unchanged
-  resultText.style.fontSize = "1.5rem";
-  resultText.style.fontWeight = "bold";
-  resultText.style.color = "#7c5a48"; // Highlight color
-  resultText.style.transition = "color 0.3s ease-in-out"; // Only color transition
-});
-
-    
-  </script>
-
-</body>
+    <script src="script.js" defer></script>
+  </body>
 </html>
